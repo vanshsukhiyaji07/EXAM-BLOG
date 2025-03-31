@@ -1,12 +1,79 @@
-# React + Vite
+# EXAM-BLOG
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+EXAM-BLOG is a React-based blog application that fetches news articles from the News API and displays them with filtering options. Users can browse news based on different categories and read full articles.
 
-Currently, two official plugins are available:
+## Features
+- Fetches latest news from `wsj.com`
+- Category-based filtering
+- Responsive design using Bootstrap
+- Read more functionality with a modal view
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- React.js
+- Bootstrap
+- News API
 
-## Expanding the ESLint configuration
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/vanshsukhiyaji07/EXAM-BLOG.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd EXAM-BLOG
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm start
+   ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Usage
+- The homepage displays news articles with images and descriptions.
+- Click on category buttons to filter articles.
+- Click "View More" to see the full article in a modal.
+- Click "Read Full Article" to open the source link.
+
+## API Key
+The app uses the News API. Ensure you have a valid API key and replace it in the fetch URL inside `Blog.js`:
+
+fetch("https://newsapi.org/v2/everything?domains=wsj.com&apiKey=YOUR_API_KEY")
+
+
+## Contributing
+1. Fork the repository.
+2. Create a new branch:
+
+   git checkout -b feature-branch
+   
+3. Make your changes and commit:
+   
+   git commit -m "Your message"
+  
+4. Push to the branch:
+
+   git push origin feature-branch
+
+5. Open a Pull Request.
+
+##SCREENSHOTS
+![Screenshot 2025-03-31 120324](https://github.com/user-attachments/assets/4bde5073-4dc8-4760-b152-c123967d085d)
+
+![Screenshot 2025-03-31 120351](https://github.com/user-attachments/assets/7e9a1177-d186-4243-adff-23c992d1c0b2)
+
+![Screenshot 2025-03-31 120416](https://github.com/user-attachments/assets/adcb5a3a-1aa3-487b-961d-e9b5ac0abf49)
+
+![Screenshot 2025-03-31 120432](https://github.com/user-attachments/assets/400e5998-023b-4513-be7a-fc1d07956cb9)
+
+
+
+## License
+This project is licensed under the MIT License.
+
+## Contact
+For any queries, reach out via [GitHub Issues](https://github.com/vanshsukhiyaji07/EXAM-BLOG/issues).
+
