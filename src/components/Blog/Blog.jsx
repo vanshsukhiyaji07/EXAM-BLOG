@@ -36,7 +36,6 @@ function Blog() {
 
     return (
         <div className="container mt-4">
-            {/* Navbar - Sticky on Top */}
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary rounded p-3 mb-4 sticky-top">
                 <a className="navbar-brand fw-bold text-white" href="#">Blog</a>
                 <div className="d-flex">
@@ -52,7 +51,6 @@ function Blog() {
                 </div>
             </nav>
 
-            {/* Blog Cards */}
             <div className="row">
                 {filteredArticles.length > 0 ? (
                     filteredArticles.map((article, index) => (
@@ -74,7 +72,6 @@ function Blog() {
                 )}
             </div>
 
-            {/* Article Modal */}
             {expandedArticle !== null && (
                 <div className="modal fade show d-block" tabIndex="-1" style={{ background: "rgba(0,0,0,0.5)" }}>
                     <div className="modal-dialog modal-lg">
